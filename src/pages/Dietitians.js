@@ -23,9 +23,15 @@ function Dietitians() {
         </Button>
       </h1>
       <CDBContainer style={{ marginLeft: "2px" ,paddingLeft:"0px", textAlgin:"centre"}}>
-        <CDBTable striped>
+        <CDBTable striped   >
           <CDBTableHeader>
-            <tr>
+            <tr style={{
+              textAlign: "center",
+              tableLayout: "sticky",
+              backgroundColor: "#202F1C",
+              color: "white",
+              padding: "0px",
+            }}>
               <th style={{ width: "5%" }}>#</th>
               <th style={{ width: "15%" }}>Full Name </th>
               <th style={{ width: "10%" }}>EmployeeId</th>

@@ -9,7 +9,7 @@ function IngredientAddModal(props) {
   return (
     <Modal show={show} onHide={() => setShow(false)}>
       <Form onSubmit={addIngredient}>
-        <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}}closeButton white>
+        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}}closeButton white>
           <Modal.Title style={{color:"white"}}>Add Ingredient</Modal.Title>
         </Modal.Header>
         <Modal.Body>

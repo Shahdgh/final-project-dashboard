@@ -6,7 +6,7 @@ function TypeDeleteModal(props) {
   const { show, setShow,typeId } = props
   return (
     <Modal show={show} onHide={() => setShow(false)}>
-      <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+      <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
         <Modal.Title style={{color:"white"}}>Delete Menu</Modal.Title>
       </Modal.Header>
       <Modal.Body>Are you sure to delete this Menue ?</Modal.Body>

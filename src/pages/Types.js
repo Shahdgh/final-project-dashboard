@@ -41,15 +41,15 @@ function Types() {
             style={{
               textAlign: "center",
               tableLayout: "sticky",
-              backgroundColor: "#58305C",
+              backgroundColor: "#202F1C",
               color: "white",
               padding: "0px",
             }}
           >
             <th style={{ width: "20%" }}>#</th>
-            <th style={{ width: "40%" }}> Name </th>
-          
-            <th style={{ width: "40%" }}>Actions</th>
+            <th style={{ width: "20%" }}> Name </th>
+            <th style={{ width: "30%" }}> Avatar</th>
+            <th style={{ width: "30%" }}>Actions</th>
           </tr>
 
           <CDBTableBody style={{ textAlign: "center" }}>

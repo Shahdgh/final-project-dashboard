@@ -8,7 +8,7 @@ function IngredientEditModal(props) {
   return (
     <Modal  show={show} onHide={() => setShow(false)}>
       <Form onSubmit={e => editIngredient(e, ingredient._id)}>
-        <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
           <Modal.Title style={{color:"white"}}>Edit Ingredient</Modal.Title>
         </Modal.Header>
         <Modal.Body>

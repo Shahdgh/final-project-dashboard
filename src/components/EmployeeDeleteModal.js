@@ -6,7 +6,7 @@ function EmployeeDeleteModal(props) {
   const { show, setShow, employeeId } = props
   return (
     <Modal show={show} onHide={() => setShow(false)}>
-      <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+      <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
         <Modal.Title style={{color:"white"}}>Delete Employee</Modal.Title>
       </Modal.Header>
       <Modal.Body>Are you sure to delete this Emplyee ?</Modal.Body>

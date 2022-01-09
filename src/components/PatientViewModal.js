@@ -4,7 +4,7 @@ function PatientViewModal(props) {
   const { show, setShow, patient } = props
   return (
     <Modal show={show} onHide={() => setShow(false)}>
-      <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}}closeButton>
+      <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}}closeButton>
         <Modal.Title >View Patient</Modal.Title>
       </Modal.Header>
       <Modal.Body>

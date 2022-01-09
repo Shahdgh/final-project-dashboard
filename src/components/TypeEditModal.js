@@ -8,7 +8,7 @@ function TypeEditModal(props) {
   return (
     <Modal  show={show} onHide={() => setShow(false)}>
       <Form onSubmit={e => editType(e, type._id)}>
-        <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
           <Modal.Title style={{color:"white"}}>Edit Dietitian</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -20,7 +20,14 @@ function TypeEditModal(props) {
               <Form.Control name="name" type="text" defaultValue={type.name} />
             </Col>
           </Form.Group>
-         
+          <Form.Group as={Row} className="mb-3">
+            <Form.Label column md="3">
+              Image
+            </Form.Label>
+            <Col md="8">
+              <Form.Control type="url" name="avatar" defaultValue={type.image} />
+            </Col>
+          </Form.Group>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShow(false)}>

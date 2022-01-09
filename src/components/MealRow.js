@@ -15,8 +15,8 @@ function MealRow(props) {
       <tr style={{ fontSize: "13px", fontWeight: "600", textAlign: "center", paddingTop: "200px" }}>
         <td style={{ paddingTop: "50px" }}>{meal._id}</td>
         <td style={{ paddingTop: "50px" }}>
-        <p>{client.firstName} {client.lastName} </p>
-        <p>{client.disease}  </p>
+        <p>{client?.firstName} {client?.lastName} </p>
+        <p>{client?.disease}  </p>
         </td>
         
         {meal.comment ? <td>{meal.comment}</td> : <td>--</td>}

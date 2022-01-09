@@ -8,7 +8,7 @@ function PatientEditModal(props) {
   return (
     <Modal  show={show} onHide={() => setShow(false)}>
       <Form onSubmit={e => editPatient(e, patient._id)}>
-        <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
           <Modal.Title style={{color:"white"}}>Edit Patient</Modal.Title>
         </Modal.Header>
         <Modal.Body>

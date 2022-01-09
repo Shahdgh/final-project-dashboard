@@ -7,7 +7,7 @@ function TypeAddModal(props) {
   return (
     <Modal show={show} onHide={() => setShow(false)}>
       <Form onSubmit={addType}>
-        <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
           <Modal.Title>Add Menu</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -24,8 +24,8 @@ function TypeAddModal(props) {
           <Button variant="secondary" onClick={() => setShow(false)}>
             Close
           </Button>
-          <Button variant="primary" type="submit" onClick={() => setShow(false)}>
-            Add Dietitian
+          <Button variant=""style={{backgroundColor:"#202F1C",color:"white"}} type="submit" onClick={() => setShow(false)}>
+            Add Type
           </Button>
         </Modal.Footer>
       </Form>

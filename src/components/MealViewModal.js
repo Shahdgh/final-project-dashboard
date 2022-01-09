@@ -9,15 +9,15 @@ function MealViewModal(props) {
       const client = meal.employee || meal.patient || meal.patientCompanion
   return (<>
     <Modal show={show} onHide={() => setShow(false)}>
-      <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}}closeButton>
+      <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}}closeButton>
         <Modal.Title >View Meals</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <ListGroup>
      
           <ListGroup.Item>
-            <strong>Requester Information:</strong> <p>{client.firstName} {client.lastName} </p>
-        <p>{client.disease}  </p>
+          <strong>Requester Information:</strong> <p>{client?.firstName} {client?.lastName} </p>
+        <p>{client?.disease}  </p> 
           </ListGroup.Item>
           <ListGroup.Item>
             <strong>Comment:</strong> {meal.comment ? <p>{meal.comment}</p> : <p>--</p>}

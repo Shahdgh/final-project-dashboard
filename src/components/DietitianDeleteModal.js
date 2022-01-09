@@ -6,7 +6,7 @@ function DietitianDeleteModal(props) {
   const { show, setShow, dietitianId } = props
   return (
     <Modal show={show} onHide={() => setShow(false)}>
-      <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}} closeButton>
+      <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
         <Modal.Title>Delete Dietitian</Modal.Title>
       </Modal.Header>
       <Modal.Body>Are you sure to delete this DietitianId ?</Modal.Body>

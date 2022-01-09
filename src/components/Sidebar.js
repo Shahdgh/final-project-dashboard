@@ -26,7 +26,7 @@ function Sidebar(props) {
     
       <CDBContainer style={{height:"100vh",width:"100%", marginLeft:"0px",marginRight:"0px",position:"fixed"}}>
          
-        <CDBSidebar textColor="#fff" backgroundColor="#321638">
+        <CDBSidebar textColor="#fff" backgroundColor="#202F1C">
           <CDBSidebarHeader prefix={<i className="fa fa-bars " />}>Dashboard</CDBSidebarHeader>
           
           <CDBSidebarContent>
@@ -51,6 +51,7 @@ function Sidebar(props) {
               </CDBSidebarMenuItem>
               {/* MdFastfood */}
             </CDBSidebarMenu>
+            
             <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="fa fa-user-cog"><Link to="/admins">Admin</Link></CDBSidebarMenuItem>
             </CDBSidebarMenu>

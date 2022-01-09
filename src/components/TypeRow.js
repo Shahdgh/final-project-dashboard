@@ -18,7 +18,9 @@ function TypeRow(props) {
       <td style={{paddingTop:"50px"}}>
         {type.name} 
       </td>
-      
+      <td >
+        <img src={type.image} style={{ objectFit: "contain", height: "100px", width: "100%" }} />
+      </td>
       <td >
         <Button variant="" style={{ fontSize:"30px",fontWeight:"800"}} className="me-2" onClick={() => setEditShow(true)}>
           <FcEditImage/>

@@ -12,8 +12,7 @@ function Login() {
           <div className="text-center algin-items-center mt-4 mb-2">
             <p style={{justifyContent: "center", fontSize:"35px",fontWeight:"600"}} > Login</p>
           </div>
-          {/* <CDBInput label="E-mail" type="email" icon="envelope" iconClass="text-muted" requird/>
-                <CDBInput name="email" required label="Password" type="password" icon="lock" iconClass="text-muted"/> */}
+    
           <Form.Group as={Row} className=" text-center algin-items-center mb-2 mb-3">
             <Form.Label  column md="2 fs-5 ">
               Email
@@ -30,7 +29,7 @@ function Login() {
               <Form.Control type="password" name="password" required />
             </Col>
           </Form.Group>
-          <CDBBtn  style={{ width: "30%",backgroundColor:"#45234A",border: "none"  }} className="btn-block mt-5 mx-auto" type="submit">
+          <CDBBtn  style={{ width: "30%",backgroundColor:"#202F1C",border: "none"  }} className="btn-block mt-5 mx-auto" type="submit">
             Login
           </CDBBtn>
         </CDBCardBody>

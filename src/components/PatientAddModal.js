@@ -8,7 +8,7 @@ function PatientAddModal(props) {
   return (
     <Modal show={show} onHide={() => setShow(false)}>
       <Form onSubmit={addPatient}>
-        <Modal.Header style={{backgroundColor:"#6D3E6F",color:"white"}}closeButton white>
+        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}}closeButton white>
           <Modal.Title style={{color:"white"}}>Add Patient</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -124,8 +124,8 @@ function PatientAddModal(props) {
           <Button variant="secondary" onClick={() => setShow(false)}>
             Close
           </Button>
-          <Button variant="primary" type="submit" onClick={() => setShow(false)}>
-            Add Employee
+          <Button variant=""style={{backgroundColor:"#202F1C",color:"white"}} type="submit" onClick={() => setShow(false)}>
+            Add Patient
           </Button>
         </Modal.Footer>
       </Form>

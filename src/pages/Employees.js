@@ -50,7 +50,7 @@ function Employees() {
             style={{
               textAlign: "center",
               tableLayout: "sticky",
-              backgroundColor: "#58305C",
+              backgroundColor: "#202F1C",
               color: "white",
               padding: "0px",
             }}
