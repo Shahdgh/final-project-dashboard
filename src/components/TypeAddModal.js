@@ -19,6 +19,14 @@ function TypeAddModal(props) {
               <Form.Control type="text" name="name"  />
             </Col>
           </Form.Group>
+          <Form.Group as={Row} className="mb-3">
+            <Form.Label column md="3">
+              Image
+            </Form.Label>
+            <Col md="8">
+              <Form.Control type="url" name="image" />
+            </Col>
+          </Form.Group>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShow(false)}>

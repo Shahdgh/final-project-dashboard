@@ -481,6 +481,8 @@ function App() {
       const form = e.target
       const typeBody = {
         name: form.elements.name.value,
+        image: form.elements.image.value,
+
       }
       await axios.post("http://localhost:5000/api/types", typeBody, {
         headers: {
