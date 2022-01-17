@@ -27,7 +27,7 @@ function App() {
   const navigate = useNavigate()
 
   const getAdmins = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -36,7 +36,7 @@ function App() {
     // console.log(response.data)
   }
   const getProfileAdmin = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/profile", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/profile", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -46,7 +46,7 @@ function App() {
   }
 
   const getPatients = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/patient", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/patient", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -55,7 +55,7 @@ function App() {
     // console.log(response.data)
   }
   const getEmployees = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/employee", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/employee", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -66,7 +66,7 @@ function App() {
   }
 
   const getTypes = async () => {
-    const response = await axios.get("http://localhost:5000/api/types", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/types", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -75,7 +75,7 @@ function App() {
     // console.log(response)
   }
   const getDietitians = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/dietitien", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/dietitien", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -84,7 +84,7 @@ function App() {
     // console.log(response.data)
   }
   const getIngredients = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/ingredients", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/ingredients", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -93,7 +93,7 @@ function App() {
     // console.log(response.data)
   }
   const getMeals = async () => {
-    const response = await axios.get("http://localhost:5000/api/meals", {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/meals", {
       headers: {
         Authorization: localStorage.tokenDashboard,
       },
@@ -121,7 +121,7 @@ function App() {
         email: form.elements.email.value,
         password: form.elements.password.value,
       }
-      const response = await axios.post(`http://localhost:5000/api/admin/login`, adminBody, {
+      const response = await axios.post(`https://ems-in-hospital.herokuapp.com/api/admin/login`, adminBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -147,7 +147,7 @@ function App() {
         password: form.elements.password.value,
         avatar: form.elements.avatar.value,
       }
-      await axios.post("http://localhost:5000/api/admin/add-admin", AdminBody, {
+      await axios.post("https://ems-in-hospital.herokuapp.com/api/admin/add-admin", AdminBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -180,7 +180,7 @@ function App() {
         disease: form.elements.disease.value,
         bloodType: form.elements.bloodType.value,
       }
-      await axios.post("http://localhost:5000/api/admin/patient", patientBody, {
+      await axios.post("https://ems-in-hospital.herokuapp.com/api/admin/patient", patientBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -210,7 +210,7 @@ function App() {
         disease: form.elements.disease.value,
         bloodType: form.elements.bloodType.value,
       }
-      await axios.put(`http://localhost:5000/api/admin/patient/${patientId}`, patientBody, {
+      await axios.put(`https://ems-in-hospital.herokuapp.com/api/admin/patient/${patientId}`, patientBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -225,7 +225,7 @@ function App() {
   ////delete Patient
   const deletePatient = async patientId => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/patient/${patientId}`, {
+      await axios.delete(`https://ems-in-hospital.herokuapp.com/api/admin/patient/${patientId}`, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -255,7 +255,7 @@ function App() {
         avatar: form.elements.avatar.value,
         employeeId: form.elements.employeeId.value,
       }
-      await axios.post("http://localhost:5000/api/admin/dietitien", dietitianBody, {
+      await axios.post("https://ems-in-hospital.herokuapp.com/api/admin/dietitien", dietitianBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -278,11 +278,11 @@ function App() {
         lastName: form.elements.lastName.value,
         email: form.elements.email.value,
         phone: form.elements.phone.value,
-      
+
         avatar: form.elements.avatar.value,
         employeeId: form.elements.employeeId.value,
       }
-      await axios.put(`http://localhost:5000/api/admin/dietitien/${dietitianId}`, dietitianBody, {
+      await axios.put(`https://ems-in-hospital.herokuapp.com/api/admin/dietitien/${dietitianId}`, dietitianBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -297,7 +297,7 @@ function App() {
   ////delete Dietitian
   const deleteDietitian = async dietitianId => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/dietitien/${dietitianId}`, {
+      await axios.delete(`https://ems-in-hospital.herokuapp.com/api/admin/dietitien/${dietitianId}`, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -327,7 +327,7 @@ function App() {
         avatar: form.elements.avatar.value,
         employeeId: form.elements.employeeId.value,
       }
-      await axios.post("http://localhost:5000/api/admin/employee", employeeBody, {
+      await axios.post("https://ems-in-hospital.herokuapp.com/api/admin/employee", employeeBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -354,7 +354,7 @@ function App() {
         avatar: form.elements.avatar.value,
         employeeId: form.elements.employeeId.value,
       }
-      await axios.put(`http://localhost:5000/api/admin/employee/${employeeId}`, employeeBody, {
+      await axios.put(`https://ems-in-hospital.herokuapp.com/api/admin/employee/${employeeId}`, employeeBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -369,7 +369,7 @@ function App() {
   ////delete Employee
   const deleteEmployee = async employeeId => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/employee/${employeeId}`, {
+      await axios.delete(`https://ems-in-hospital.herokuapp.com/api/admin/employee/${employeeId}`, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -408,7 +408,7 @@ function App() {
         calories: form.elements.calories.value,
         types: types,
       }
-      await axios.post("http://localhost:5000/api/admin/ingredients", ingredientBody, {
+      await axios.post("https://ems-in-hospital.herokuapp.com/api/admin/ingredients", ingredientBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -444,7 +444,7 @@ function App() {
         calories: form.elements.calories.value,
         types: types,
       }
-      await axios.put(`http://localhost:5000/api/admin/ingredients/${ingredientId}`, ingredientBody, {
+      await axios.put(`https://ems-in-hospital.herokuapp.com/api/admin/ingredients/${ingredientId}`, ingredientBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -459,7 +459,7 @@ function App() {
   ////delete Ingredients
   const deleteIngredient = async ingredientId => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/ingredients/${ingredientId}`, {
+      await axios.delete(`https://ems-in-hospital.herokuapp.com/api/admin/ingredients/${ingredientId}`, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -482,9 +482,8 @@ function App() {
       const typeBody = {
         name: form.elements.name.value,
         image: form.elements.image.value,
-
       }
-      await axios.post("http://localhost:5000/api/types", typeBody, {
+      await axios.post("https://ems-in-hospital.herokuapp.com/api/types", typeBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -505,7 +504,7 @@ function App() {
         name: form.elements.name.value,
         image: form.elements.image.value,
       }
-      await axios.put(`http://localhost:5000/api/types/${typeId}`, typeBody, {
+      await axios.put(`https://ems-in-hospital.herokuapp.com/api/types/${typeId}`, typeBody, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
@@ -520,7 +519,7 @@ function App() {
   ////delete Types
   const deleteType = async typeId => {
     try {
-      await axios.delete(`http://localhost:5000/api/types/${typeId}`, {
+      await axios.delete(`https://ems-in-hospital.herokuapp.com/api/types/${typeId}`, {
         headers: {
           Authorization: localStorage.tokenDashboard,
         },
