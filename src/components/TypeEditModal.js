@@ -25,7 +25,7 @@ function TypeEditModal(props) {
               Image
             </Form.Label>
             <Col md="8">
-              <Form.Control type="url" name="avatar" defaultValue={type.image} />
+              <Form.Control type="url" name="image" defaultValue={type.image} />
             </Col>
           </Form.Group>
         </Modal.Body>

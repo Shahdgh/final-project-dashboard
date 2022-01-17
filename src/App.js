@@ -33,7 +33,7 @@ function App() {
       },
     })
     setAdmins(response.data)
-    console.log(response.data)
+    // console.log(response.data)
   }
   const getProfileAdmin = async () => {
     const response = await axios.get("http://localhost:5000/api/admin/profile", {
@@ -42,7 +42,7 @@ function App() {
       },
     })
     setProfileAdmin(response.data)
-    console.log(response.data)
+    // console.log(response.data)
   }
 
   const getPatients = async () => {
@@ -52,7 +52,7 @@ function App() {
       },
     })
     setPatients(response.data)
-    console.log(response.data)
+    // console.log(response.data)
   }
   const getEmployees = async () => {
     const response = await axios.get("http://localhost:5000/api/admin/employee", {
@@ -61,7 +61,7 @@ function App() {
       },
     })
     const data = response.data
-    console.log(data)
+    // console.log(data)
     setEmployees(response.data)
   }
 
@@ -72,7 +72,7 @@ function App() {
       },
     })
     setTyps(response.data)
-    console.log(response)
+    // console.log(response)
   }
   const getDietitians = async () => {
     const response = await axios.get("http://localhost:5000/api/admin/dietitien", {
@@ -99,7 +99,7 @@ function App() {
       },
     })
     setMeals(response.data)
-    console.log(response.data)
+    // console.log(response.data)
   }
 
   useEffect(() => {
@@ -503,6 +503,7 @@ function App() {
       const form = e.target
       const typeBody = {
         name: form.elements.name.value,
+        image: form.elements.image.value,
       }
       await axios.put(`http://localhost:5000/api/types/${typeId}`, typeBody, {
         headers: {
@@ -571,7 +572,7 @@ function App() {
         <Col xs={1} sm={3} style={{ height: "100vh" }}>
           <Sidebar />
         </Col>
-        <Col xs={5} sm={9}>
+        <Col xs={3} sm={9}>
           <Routes>
             <Route path="/employees" element={localStorage.tokenDashboard ? <Employees /> : <Navigate to="/login" />} />
             <Route path="/patients" element={localStorage.tokenDashboard ? <Patients /> : <Navigate to="/login" />} />
