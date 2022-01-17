@@ -407,6 +407,7 @@ function App() {
         description: form.elements.description.value,
         calories: form.elements.calories.value,
         types: types,
+        
       }
       await axios.post("https://ems-in-hospital.herokuapp.com/api/admin/ingredients", ingredientBody, {
         headers: {
