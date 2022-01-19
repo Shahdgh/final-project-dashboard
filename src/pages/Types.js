@@ -51,6 +51,7 @@ function Types() {
             <th style={{ width: "30%" }}> Avatar</th>
             <th style={{ width: "30%" }}>Actions</th>
           </tr>
+        
 
           <CDBTableBody style={{ textAlign: "center" }}>
             {types.map(type => (
