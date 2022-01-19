@@ -6,9 +6,7 @@ import { FcDeleteRow } from "react-icons/fc";
 function CompanionRow(props) {
     const { companion} = props
    
-    const [editShow, setEditShow] = useState(false)
-
-    const [deleteShow, setDeleteShow] = useState(false)
+   
     return (  
     <>
         <tr style={{fontSize:"15px",fontWeight:"bold",textAlign:"center", padding:"2px"}} >
@@ -31,8 +29,7 @@ function CompanionRow(props) {
        <FcDeleteRow/>
           </Button>
       </td>
-      {/* <DietitianEditModal show={editShow} setShow={setEditShow} dietitian={dietitian} />
-      <DietitianDeleteModal show={deleteShow} setShow={setDeleteShow}  dietitianId={dietitian._id} /> */}
+ 
     </tr>
   
     </>
