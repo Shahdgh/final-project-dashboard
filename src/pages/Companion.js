@@ -7,7 +7,7 @@ import CompanionRow from "../components/CompanionRow"
 function Companion() {
   const { companions } = useContext(HospitalsContext)
  
-
+///
   return (
     <>
       <h1 style={{ fontSize: "30px", marginTop: "0px", textAlign: "center" }}>Companion List </h1>
