@@ -14,9 +14,13 @@ import Ingredients from "./pages/Ingredients"
 import Types from "./pages/Types"
 import Meals from "./pages/Meals"
 import Admins from "./pages/Admins"
+import Companion from "./pages/Companion"
 function App() {
   const [employees, setEmployees] = useState([])
   const [dietitians, setDietitians] = useState([])
+  const [companions, setCompanions] = useState([])
+
+  
   const [types, setTyps] = useState([])
   const [patients, setPatients] = useState([])
   const [ingredients, setIngredients] = useState([])
@@ -83,6 +87,15 @@ function App() {
     setDietitians(response.data)
     // console.log(response.data)
   }
+  const getCompanions = async () => {
+    const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/companion", {
+      headers: {
+        Authorization: localStorage.tokenDashboard,
+      },
+    })
+    setCompanions(response.data)
+    console.log(response.data)
+  }
   const getIngredients = async () => {
     const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/ingredients", {
       headers: {
@@ -107,6 +120,7 @@ function App() {
     getProfileAdmin()
     getPatients()
     getDietitians()
+    getCompanions()////////////
     getEmployees()
     getTypes()
     getIngredients()
@@ -554,6 +568,7 @@ function App() {
     addDietitian,
     editDietitian,
     deleteDietitian,
+    companions,
     employees,
     addEmployee,
     editEmployee,
@@ -588,7 +603,12 @@ function App() {
               path="/dietitians"
               element={localStorage.tokenDashboard ? <Dietitians /> : <Navigate to="/login" />}
             />
+             <Route
+              path="/companions"
+              element={localStorage.tokenDashboard ? <Companion /> : <Navigate to="/login" />}
+            />
           </Routes>
+          
         </Col>
       </Row>
     </HospitalsContext.Provider>

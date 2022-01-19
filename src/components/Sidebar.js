@@ -15,7 +15,7 @@ import { Link } from "react-router-dom"
 import { MdFastfood,MdNoMealsOuline} from "react-icons/md";
 import { GoSignOut,GoSignIn} from "react-icons/go";
 
-
+import { MdFamilyRestroom} from "react-icons/md"
 import{Nav} from "react-bootstrap"
 function Sidebar(props) {
   // const {admin}=props
@@ -40,6 +40,10 @@ function Sidebar(props) {
               <CDBSidebarMenuItem icon="fa fa-user-md">
               <Link to="/dietitians">Dietitians</Link>
               </CDBSidebarMenuItem>
+              <CDBSidebarMenuItem >
+                <MdFamilyRestroom style={{fontSize:"20px",marginRight:"8px"}}/>       <Link to="/companions">Companion</Link>
+              </CDBSidebarMenuItem>
+              
               <CDBSidebarMenuItem icon="th">
               <Link to="/ingredients">Ingredients</Link>
               </CDBSidebarMenuItem>
