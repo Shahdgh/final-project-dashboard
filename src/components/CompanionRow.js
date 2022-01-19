@@ -5,6 +5,7 @@ import { FcDeleteRow } from "react-icons/fc";
 ;
 function CompanionRow(props) {
     const { companion} = props
+    
    
    
     return (  
@@ -23,13 +24,7 @@ function CompanionRow(props) {
       </td>
 
 
-      <td>
- 
-          <Button style={{ fontSize:"25px",fontWeight:"bold"}}   variant="" onClick={() => setDeleteShow(true)}>
-       <FcDeleteRow/>
-          </Button>
-      </td>
- 
+   
     </tr>
   
     </>
