@@ -7,7 +7,7 @@ import CompanionRow from "../components/CompanionRow"
 function Companion() {
   const { companions } = useContext(HospitalsContext)
  
-///
+
   return (
     <>
       <h1 style={{ fontSize: "30px", marginTop: "0px", textAlign: "center" }}>Companion List </h1>
@@ -25,10 +25,10 @@ function Companion() {
             >
               <th style={{ width: "10%" }}>#</th>
               <th style={{ width: "20%" }}>Full Name </th>
-              <th style={{ width: "15%" }}>patient File</th>
+              <th style={{ width: "20%" }}>patient File</th>
               <th style={{ width: "20%" }}>Email</th>
-              <th style={{ width: "15%" }}> Phone</th>
-              <th style={{ width: "20%" }}>Avatar</th>
+            
+              <th style={{ width: "30%" }}>Avatar</th>
             </tr>
           </CDBTableHeader>
           <CDBTableBody>
