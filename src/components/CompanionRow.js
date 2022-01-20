@@ -10,10 +10,8 @@ function CompanionRow(props) {
         <td>
           {companion.firstName} {companion.lastName}
         </td>
-
         <td>{companion.fileNumber}</td>
         <td>{companion.email}</td>
-        <td>{companion.phone}</td>
         <td>
           <img src={companion.avatar} style={{ objectFit: "contain", height: "100px", width: "100%" }} />
         </td>

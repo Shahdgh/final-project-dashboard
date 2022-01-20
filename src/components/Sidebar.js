@@ -38,7 +38,7 @@ function Sidebar() {
                 <Link to="/dietitians">Dietitians</Link>
               </CDBSidebarMenuItem>
               <CDBSidebarMenuItem>
-                <MdFamilyRestroom style={{ fontSize: "20px", marginRight: "8px" }} />{" "}
+                <MdFamilyRestroom style={{ fontSize: "20px",marginRight: "15px" }} />{" "}
                 <Link to="/companions">Companion</Link>
               </CDBSidebarMenuItem>
 
@@ -66,10 +66,10 @@ function Sidebar() {
 
             <CDBSidebarMenu>
               <CDBSidebarMenuItem>
-                <img src={profileAdmin.avatar} style={{ objectFit: "scale-down", height: "150px", width: "100%" }} />
+                <img src={profileAdmin.avatar} style={{ objectFit: "scale-down", height: "150px", width: "100%",marginTop:"20px" }} />
                 <br />
 
-                <p style={{ fontSize: "15px", fontWeight: "600" }}>
+                <p style={{ fontSize: "15px", fontWeight: "600",marginTop:"5px",marginLeft:"50px" }}>
                   {profileAdmin.firstName} {profileAdmin.lastName}
                 </p>
               </CDBSidebarMenuItem>
