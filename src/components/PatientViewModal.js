@@ -1,4 +1,4 @@
-import { Button, Image, ListGroup, Modal } from "react-bootstrap"
+import { Button,  ListGroup, Modal } from "react-bootstrap"
 
 function PatientViewModal(props) {
   const { show, setShow, patient } = props

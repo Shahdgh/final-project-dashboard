@@ -94,7 +94,7 @@ function App() {
       },
     })
     setCompanions(response.data)
-    console.log(response.data)
+    // console.log(response.data)
   }
   const getIngredients = async () => {
     const response = await axios.get("https://ems-in-hospital.herokuapp.com/api/admin/ingredients", {

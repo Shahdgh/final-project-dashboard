@@ -27,16 +27,9 @@ function Types() {
           <FcAddDatabase />{" "}
         </Button>
       </h1>
-   
+
       <CDBContainer>
-        <CDBTable
-          striped
-          bordered
-          hover
-          entriesOptions={[5, 20, 25]}
-          entries={5}
-          pagesAmount={4}
-          materialSearch={true} >
+        <CDBTable striped bordered hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} materialSearch={true}>
           <tr
             style={{
               textAlign: "center",
@@ -51,7 +44,6 @@ function Types() {
             <th style={{ width: "30%" }}> Avatar</th>
             <th style={{ width: "30%" }}>Actions</th>
           </tr>
-        
 
           <CDBTableBody style={{ textAlign: "center" }}>
             {types.map(type => (

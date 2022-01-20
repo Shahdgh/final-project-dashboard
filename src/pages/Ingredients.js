@@ -7,8 +7,6 @@ import { FcAddDatabase } from "react-icons/fc"
 import IngredientRow from "../components/IngredientRow"
 import IngredientAddModal from "../components/IngredientAddModal"
 
-
-
 function Ingredients() {
   const { ingredients } = useContext(HospitalsContext)
   const [show, setShow] = useState(false)
@@ -20,7 +18,7 @@ function Ingredients() {
   return (
     <>
       <h1 style={{ fontSize: "30px", marginTop: "0px", textAlign: "center" }}>
-      Ingredients List{" "}
+        Ingredients List{" "}
         <Button
           style={{ marginLeft: "40px", marginBottom: "10px", fontSize: "40px" }}
           onClick={() => setShow(true)}
@@ -29,21 +27,9 @@ function Ingredients() {
           <FcAddDatabase />{" "}
         </Button>
       </h1>
-      {/* <div style={{ display: "flex", justifyContent: "flex-top" }}>
-   
-      </div> */}
-      <CDBContainer>
-        <CDBTable
-          striped
-          bordered
-          hover
-          entriesOptions={[5, 20, 25]}
-          entries={5}
-          pagesAmount={4}
-          materialSearch={true}
 
-        
-        >
+      <CDBContainer>
+        <CDBTable striped bordered hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} materialSearch={true}>
           <tr
             style={{
               textAlign: "center",

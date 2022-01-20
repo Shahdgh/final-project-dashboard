@@ -8,7 +8,7 @@ function DietitianAddModal(props) {
   return (
     <Modal show={show} onHide={() => setShow(false)}>
       <Form onSubmit={addDietitian}>
-        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
+        <Modal.Header style={{ backgroundColor: "#202F1C", color: "white" }} closeButton>
           <Modal.Title>Add Dietitian</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -71,13 +71,17 @@ function DietitianAddModal(props) {
               <Form.Control type="url" name="avatar" required />
             </Col>
           </Form.Group>
-        
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShow(false)}>
             Close
           </Button>
-          <Button variant="" style={{backgroundColor:"#202F1C",color:"white"}} type="submit" onClick={() => setShow(false)}>
+          <Button
+            variant=""
+            style={{ backgroundColor: "#202F1C", color: "white" }}
+            type="submit"
+            onClick={() => setShow(false)}
+          >
             Add Dietitian
           </Button>
         </Modal.Footer>

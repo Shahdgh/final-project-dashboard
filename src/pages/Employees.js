@@ -26,26 +26,9 @@ function Employees() {
           <FcAddDatabase />{" "}
         </Button>
       </h1>
-      {/* <div style={{ display: "flex", justifyContent: "flex-top" }}>
-   
-      </div> */}
-      <CDBContainer>
-        <CDBTable
-          striped
-          bordered
-          hover
-          entriesOptions={[5, 20, 25]}
-          entries={5}
-          pagesAmount={4}
-          materialSearch={true}
 
-          //   striped
-          //         bordered
-          //         entriesOptions={[5, 20, 25]}
-          //         checkbox
-          //         // paging={false}
-          //         materialSearch
-        >
+      <CDBContainer>
+        <CDBTable striped bordered hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} materialSearch={true}>
           <tr
             style={{
               textAlign: "center",

@@ -1,12 +1,11 @@
 import React from "react"
 import { CDBTable, CDBTableHeader, CDBTableBody, CDBContainer } from "cdbreact"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import HospitalsContext from "../utils/HospitalsContext"
 
 import CompanionRow from "../components/CompanionRow"
 function Companion() {
   const { companions } = useContext(HospitalsContext)
- 
 
   return (
     <>
@@ -27,7 +26,7 @@ function Companion() {
               <th style={{ width: "20%" }}>Full Name </th>
               <th style={{ width: "20%" }}>patient File</th>
               <th style={{ width: "20%" }}>Email</th>
-            
+
               <th style={{ width: "30%" }}>Avatar</th>
             </tr>
           </CDBTableHeader>

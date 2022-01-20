@@ -9,7 +9,7 @@ function AdminAddModal(props) {
   return (
     <Modal show={show} onHide={() => setShow(false)}>
       <Form onSubmit={addAdmin}>
-        <Modal.Header style={{backgroundColor:"#202F1C",color:"white"}} closeButton>
+        <Modal.Header style={{ backgroundColor: "#202F1C", color: "white" }} closeButton>
           <Modal.Title>Add Admin</Modal.Title>
         </Modal.Header>
         <Modal.Body>

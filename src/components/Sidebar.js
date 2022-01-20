@@ -6,9 +6,8 @@ import {
   CDBSidebarHeader,
   CDBSidebarMenu,
   CDBSidebarMenuItem,
-  CDBSidebarFooter,
 } from "cdbreact"
-import Employees from "../pages/Employees"
+
 import HospitalsContext from "../utils/HospitalsContext"
 import { useContext } from "react"
 import { Link } from "react-router-dom"
@@ -17,8 +16,7 @@ import { GoSignOut, GoSignIn } from "react-icons/go"
 
 import { MdFamilyRestroom } from "react-icons/md"
 import { Nav } from "react-bootstrap"
-function Sidebar(props) {
-  // const {admin}=props
+function Sidebar() {
   const { profileAdmin, logout } = useContext(HospitalsContext)
   return (
     <>

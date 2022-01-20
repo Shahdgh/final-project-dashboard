@@ -1,18 +1,18 @@
-
-import DietitianRow from "../components/DietitianRow";
+import DietitianRow from "../components/DietitianRow"
 import React from "react"
 import { CDBTable, CDBTableHeader, CDBTableBody, CDBContainer } from "cdbreact"
-import { useContext,useState } from "react"
+import { useContext, useState } from "react"
 import HospitalsContext from "../utils/HospitalsContext"
 import { Button } from "react-bootstrap"
-import { FcAddDatabase } from "react-icons/fc";
-import DietitianAddModal from "../components/DietitianAddModal";
+import { FcAddDatabase } from "react-icons/fc"
+import DietitianAddModal from "../components/DietitianAddModal"
 function Dietitians() {
-    const {dietitians}= useContext(HospitalsContext)
+  const { dietitians } = useContext(HospitalsContext)
   const [show, setShow] = useState(false)
 
-    return ( <>
-         <h1 style={{ fontSize: "30px", marginTop: "0px", textAlign: "center" }}>
+  return (
+    <>
+      <h1 style={{ fontSize: "30px", marginTop: "0px", textAlign: "center" }}>
         Dietitian List{" "}
         <Button
           style={{ marginLeft: "40px", marginBottom: "10px", fontSize: "40px" }}
@@ -22,16 +22,18 @@ function Dietitians() {
           <FcAddDatabase />{" "}
         </Button>
       </h1>
-      <CDBContainer style={{ marginLeft: "2px" ,paddingLeft:"0px", textAlgin:"centre"}}>
-        <CDBTable striped   >
+      <CDBContainer style={{ marginLeft: "2px", paddingLeft: "0px", textAlgin: "centre" }}>
+        <CDBTable striped>
           <CDBTableHeader>
-            <tr style={{
-              textAlign: "center",
-              tableLayout: "sticky",
-              backgroundColor: "#202F1C",
-              color: "white",
-              padding: "0px",
-            }}>
+            <tr
+              style={{
+                textAlign: "center",
+                tableLayout: "sticky",
+                backgroundColor: "#202F1C",
+                color: "white",
+                padding: "0px",
+              }}
+            >
               <th style={{ width: "5%" }}>#</th>
               <th style={{ width: "15%" }}>Full Name </th>
               <th style={{ width: "10%" }}>EmployeeId</th>
@@ -48,8 +50,9 @@ function Dietitians() {
           </CDBTableBody>
         </CDBTable>
       </CDBContainer>
-      <DietitianAddModal show={show} setShow={setShow}/>
-    </> );
+      <DietitianAddModal show={show} setShow={setShow} />
+    </>
+  )
 }
 
-export default Dietitians;
+export default Dietitians
